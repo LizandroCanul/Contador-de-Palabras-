@@ -75,34 +75,6 @@ textarea:focus {
     font-size: 1.2rem;
 }
 
-.additional-info {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 25px;
-}
-
-.info-item {
-    text-align: center;
-    flex: 1;
-    padding: 10px;
-    border-right: 1px solid #eee;
-}
-
-.info-item:last-child {
-    border-right: none;
-}
-
-.info-value {
-    font-size: 1.8rem;
-    color: #a777e3;
-    font-weight: bold;
-}
-
-.info-label {
-    font-size: 0.9rem;
-    color: #888;
-}
-
 @media (max-width: 600px) {
     .container {
         padding: 20px;
@@ -114,23 +86,5 @@ textarea:focus {
     
     .counter {
         font-size: 2.5rem;
-    }
-    
-    .info-value {
-        font-size: 1.5rem;
-    }
-    
-    .additional-info {
-        flex-direction: column;
-    }
-    
-    .info-item {
-        border-right: none;
-        border-bottom: 1px solid #eee;
-        padding: 15px 0;
-    }
-    
-    .info-item:last-child {
-        border-bottom: none;
     }
 }

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.input-area {
+    margin-bottom: 25px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    resize: none;
+    transition: border-color 0.3s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #a777e3;
+    box-shadow: 0 0 10px rgba(167, 119, 227, 0.3);
+}
+
+.result-area {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.counter {
+    font-size: 3rem;
+    color: #6e8efb;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.label {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.info-item {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid #eee;
+}
+
+.info-item:last-child {
+    border-right: none;
+}
+
+.info-value {
+    font-size: 1.8rem;
+    color: #a777e3;
+    font-weight: bold;
+}
+
+.info-label {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .counter {
+        font-size: 2.5rem;
+    }
+    
+    .info-value {
+        font-size: 1.5rem;
+    }
+    
+    .additional-info {
+        flex-direction: column;
+    }
+    
+    .info-item {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding: 15px 0;
+    }
+    
+    .info-item:last-child {
+        border-bottom: none;
+    }
+}
